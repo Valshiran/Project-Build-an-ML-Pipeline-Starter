@@ -79,7 +79,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--output_description", 
         type = str,
-        help = "The artifact type for the cleaned data",
+        help = "A brieft description of what this step accomplished",
         required = True
     )
 
