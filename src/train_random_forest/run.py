@@ -73,7 +73,7 @@ def go(args):
 
     ######################################
     # Fit the pipeline sk_pipe by calling the .fit method on X_train and y_train
-    # YOUR CODE HERE
+    sk_pipe.fit(X_train, y_train)
     ######################################
 
     # Compute r2 and MAE
@@ -231,7 +231,7 @@ def get_inference_pipeline(rf_config, max_tfidf_features):
         ("random_forest", random_forest)
         ]
     )
-
+    
     return sk_pipe, processed_features
     ######################################
 
